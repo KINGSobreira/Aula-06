@@ -44,7 +44,8 @@ main {
 #busca {
     display: flex;
     align-itens: center;
-    width: 400px;
+    width: 100%;     /* ocupa toda a largura disponível */
+    max-width: 400px; /* mas nunca passa de 400px */
     background: #fff;
     border: 2px solid #ff6600;
     border-radius: 16px;
@@ -143,17 +144,16 @@ nav {
     list-style: none;
     margin-bottom: 30px;
     
-
 }
 
 .container-tempo li {
     display: flex;
     justify-content: center;
+    background-color: #fbb03b;
     padding: 10px;
-    width: 45%;
-    border: 2px solid #fbb03b;
+    width: 20%;
+    border: 2px solid #e65c00;
     border-radius: 12px;
-
 
 }
 
@@ -163,9 +163,6 @@ nav {
     width: 24px;
     border-radius: 30px;
     padding-right: 5px;
-
-
-
 
 }
 
@@ -209,16 +206,76 @@ h2 {
 }
 
 
-.container-ingredientes li {
-    background-color: #c1c1c1;
+/* Ingredientes */
+
+.card2 {
+    margin-top: 30px;
+    width: 100%;
+   
+}
+
+.card2 h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card2 img {
+border-radius: 12px;
+
+}
+
+
+
+.container-grupo{
+display: flex;
+justify-content: center;
+
+
+}
+
+.container-listaing li {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 12px;
     font-weight: bold;
     margin-bottom: 10px;
+    border: 2px solid #e65c00;
+    border-radius: 12px;
+    margin: 10px;
+    padding-right: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+
+.container-listaing1 li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 2px solid #e65c00;
+    border-radius: 12px;
+    margin: 10px;
+    padding-right: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
 .container-link {
     text-decoration: none;
     color: white;
@@ -236,14 +293,14 @@ h2 {
 
 
 
-/* Responsividade para tablets e celulares */
+/* Responsividade para tablets */
 @media (max-width: 1024px) {
     main {
         padding: 40px 20px; /* diminui margem lateral */
     }
 
     .logo {
-        width: 180px; /* logo menor */
+        width: 250px; /* logo menor */
     }
 
     #busca {
@@ -270,13 +327,15 @@ h2 {
     }
 }
 
+/* Responsividade no celular */
 @media (max-width: 600px) {
     .topbar-superior {
         flex-direction: column; /* logo em cima, busca embaixo */
+
     }
 
     .logo {
-        width: 150px;
+        width: 250px;
     }
 
     #texto-busca {
