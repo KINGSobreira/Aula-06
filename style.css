@@ -231,3 +231,64 @@ h2 {
     box-shadow: 5px 5px 15px black;
 
 }
+
+
+
+
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+    main {
+        padding: 40px 20px; /* diminui margem lateral */
+    }
+
+    .logo {
+        width: 180px; /* logo menor */
+    }
+
+    #busca {
+        width: 100%; /* ocupa largura da tela */
+    }
+
+    .container-imagem img {
+        width: 100%; /* imagem nunca ultrapassa tela */
+        max-width: 500px; /* mas não cresce demais */
+    }
+
+    .container-tempo {
+        flex-direction: column; /* empilha em vez de lado a lado */
+        align-items: center;
+    }
+
+    .container-tempo li {
+        width: 90%; /* ocupa quase toda largura */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* menu quebra em mais linhas se precisar */
+        gap: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar-superior {
+        flex-direction: column; /* logo em cima, busca embaixo */
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    #texto-busca {
+        font-size: 16px; /* texto da busca menor */
+    }
+
+    h2 {
+        font-size: 24px; /* títulos menores */
+    }
+
+    .card {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
