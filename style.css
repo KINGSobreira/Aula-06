@@ -11,110 +11,117 @@ html {
 }
 
 main {
-padding: 80px 120px;    
+    padding: 80px 120px;
 
 }
 
 .topbar {
-align-items: center;
-gap: 16px;
+    align-items: center;
+    gap: 16px;
 }
 
 .topbar-superior {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 
 }
 
 
 .container-logo {
-display: flex;
-align-items: center;
-padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .logo {
-width: 250px;
-height: auto;
+    width: 250px;
+    height: auto;
 
 }
 
 #busca {
-display: flex;
-align-itens: center;
-width: 400px;
-background: #fff;
-border: 2px solid #ff6600;
-border-radius: 16px;
-overflow: hidden;
+    display: flex;
+    align-itens: center;
+    width: 400px;
+    background: #fff;
+    border: 2px solid #ff6600;
+    border-radius: 16px;
+    overflow: hidden;
 
 }
 
 #texto-busca {
-flex: 1;
-border: none;
-padding: 10px 15px;
-font-size: 20px;
-outline: none;
-border-radius: 15px 0 0 15px;
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 15px 0 0 15px;
 }
 
 #botao-buscar {
-background: #ff6600;
-color: white;
-border: none;
-padding: 10px;
-cursor: pointer;
-font-weight: bold;
-transition: 0.3s;
-border-radius: 0 13px 13px 0;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 0 13px 13px 0;
 
 }
 
 #botao-buscar:hover {
-background: #e65c00;
+    background: #e65c00;
 }
 
 nav {
-display: flex;
-justify-content: center;
-padding-top: 10px;
-background: #fff;
-box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* sombra embaixo da barra */;
-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* sombra embaixo da barra */
+    ;
+    width: 100%;
 
 }
 
-.container-lista /*Lista de opções*/ {
-padding-bottom: 3px;
-margin: 0;
-list-style: none;
-font-size: 16px;
-display: flex;
-justify-content: center;
-gap: 32px;
-text-decoration: none;
+
+/*Lista de opções*/
+.container-lista {
+    padding-bottom: 3px;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    text-decoration: none;
 
 
 }
 
 .container-lista li a {
-text-decoration: none;
-color: #fbb03b;
-font-weight: bold;
-transition: 0.3s;
+    text-decoration: none;
+    color: #fbb03b;
+    font-weight: bold;
+    transition: 0.3s;
 
 }
 
 .container-lista li a:hover {
-    color:#ff6600;
+    color: #ff6600;
 }
 
 /* Conteúdo principal da página */
 
-.container-inicio /*Bolo de milho */ {
+.container-inicio
+
+/*Bolo de milho */
+    {
     display: flex;
     justify-content: center;
 }
@@ -131,28 +138,31 @@ transition: 0.3s;
 /* Informações de duração */
 .container-tempo {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     list-style: none;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    
 
 }
 
 .container-tempo li {
     display: flex;
     justify-content: center;
-    background-color: #c1c1c1;
     padding: 10px;
-    width: fit-content;
-    border-radius: 15px;
+    width: 45%;
+    border: 2px solid #fbb03b;
+    border-radius: 12px;
+
+
 }
 
 .container-tempo img {
-display: flex;
-height: auto;
-width: 24px;
-border-radius: 30px;
-padding-right: 5px;
+    display: flex;
+    height: auto;
+    width: 24px;
+    border-radius: 30px;
+    padding-right: 5px;
 
 
 
@@ -161,33 +171,34 @@ padding-right: 5px;
 
 /* Todos os H2 da página */
 h2 {
-font-size: 30px;
+    font-size: 30px;
 }
 
 
 /* Descrição */
 
 .card {
-width: 100%;
-border: 1px solid #e65c00;
-font-size: 20px;
-border-radius: 12px;
-padding: 10px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.3) ;
+    width: 100%;
+    border: 1px solid #e65c00;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card h2 {
-display: flex;
-justify-content: center;
-margin-bottom: 15px;
-font-size: 30px;
-font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    font-size: 30px;
+    font-weight: bold;
 
 }
 
 .container-texto {
     text-align: justify;
     line-height: 1.5;
+
 
 }
 
@@ -207,6 +218,7 @@ font-weight: bold;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .container-link {
     text-decoration: none;
     color: white;
