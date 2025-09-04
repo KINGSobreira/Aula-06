@@ -44,8 +44,10 @@ main {
 #busca {
     display: flex;
     align-itens: center;
-    width: 100%;     /* ocupa toda a largura disponível */
-    max-width: 400px; /* mas nunca passa de 400px */
+    width: 100%;
+    /* ocupa toda a largura disponível */
+    max-width: 400px;
+    /* mas nunca passa de 400px */
     background: #fff;
     border: 2px solid #ff6600;
     border-radius: 16px;
@@ -99,7 +101,7 @@ nav {
     font-size: 16px;
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     text-decoration: none;
 
 
@@ -143,7 +145,7 @@ nav {
     justify-content: center;
     list-style: none;
     margin-bottom: 30px;
-    
+
 }
 
 .container-tempo li {
@@ -211,7 +213,7 @@ h2 {
 .card2 {
     margin-top: 30px;
     width: 100%;
-   
+
 }
 
 .card2 h2 {
@@ -223,20 +225,20 @@ h2 {
 }
 
 .card2 img {
-border-radius: 12px;
+    border-radius: 12px;
 
 }
 
 
 
-.container-grupo{
-display: flex;
-justify-content: center;
+.container-grupo {
+    display: flex;
+    justify-content: center;
 
 
 }
 
-.container-listaing li {
+.container-listaing li, .container-listaing1 li {
     display: flex;
     align-items: center;
     list-style: none;
@@ -249,30 +251,6 @@ justify-content: center;
     padding-right: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-
-.container-listaing1 li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 12px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    border: 2px solid #e65c00;
-    border-radius: 12px;
-    margin: 10px;
-    padding-right: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-
-}
-
-
-
-
-
-
-
-
 
 
 /* Footer */
@@ -296,58 +274,88 @@ justify-content: center;
 /* Responsividade para tablets */
 @media (max-width: 1024px) {
     main {
-        padding: 40px 20px; /* diminui margem lateral */
-    }
-
-    .logo {
-        width: 250px; /* logo menor */
-    }
-
-    #busca {
-        width: 100%; /* ocupa largura da tela */
-    }
-
-    .container-imagem img {
-        width: 100%; /* imagem nunca ultrapassa tela */
-        max-width: 500px; /* mas não cresce demais */
-    }
-
-    .container-tempo {
-        flex-direction: column; /* empilha em vez de lado a lado */
-        align-items: center;
-    }
-
-    .container-tempo li {
-        width: 90%; /* ocupa quase toda largura */
-    }
-
-    nav ul {
-        flex-wrap: wrap; /* menu quebra em mais linhas se precisar */
-        gap: 16px;
-    }
-}
-
-/* Responsividade no celular */
-@media (max-width: 600px) {
-    .topbar-superior {
-        flex-direction: column; /* logo em cima, busca embaixo */
-
+        padding: 40px 20px;
+        /* diminui margem lateral */
     }
 
     .logo {
         width: 250px;
+        /* logo menor */
     }
 
+    #busca {
+        width: 100%;
+        /* ocupa largura da tela */
+    }
+
+    .container-imagem img {
+        width: 100%;
+        /* imagem nunca ultrapassa tela */
+        max-width: 500px;
+        /* mas não cresce demais */
+    }
+
+    .container-tempo {
+        flex-direction: column;
+        /* empilha em vez de lado a lado */
+        align-items: center;
+    }
+
+    .container-tempo li {
+        width: 90%;
+        /* ocupa quase toda largura */
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        /* menu quebra em mais linhas se precisar */
+        gap: 16px;
+    }
+}
+
+/* ===== RESPONSIVIDADE - TABLETS ===== */
+@media (max-width: 1024px) {
+    main {
+        padding: 20px;          /* diminui margem lateral */
+    }
+    .logo {
+        width: 200px;           /* logo menor */
+    }
+    .container-tempo {
+        flex-wrap: wrap;        /* itens quebram linha se necessário */
+    }
+    .container-tempo li {
+        flex: 1 1 45%;          /* cada item ocupa ~metade da linha */
+    }
+}
+
+/* ===== RESPONSIVIDADE - CELULARES ===== */
+@media (max-width: 600px) {
+    .topbar-superior {
+        flex-direction: column; /* logo em cima, busca embaixo */
+        gap: 10px;
+    }
+    .logo {
+        width: 180px; /* logo menor ainda */
+    }
     #texto-busca {
         font-size: 16px; /* texto da busca menor */
     }
-
-    h2 {
-        font-size: 24px; /* títulos menores */
+    .container-tempo {
+        flex-direction: column; /* empilha itens */
     }
-
+    .container-tempo li {
+        width: 100%; /* ocupa toda largura */
+    }
+    nav ul {
+        flex-direction: column; /* menu em coluna */
+        gap: 10px;
+    }
+    h2 {
+        font-size: 22px; /* títulos menores */
+    }
     .card {
-        font-size: 18px;
-        padding: 15px;
+        font-size: 16px; /* texto menor */
+        padding: 12px;   /* menos espaço interno */
     }
 }
