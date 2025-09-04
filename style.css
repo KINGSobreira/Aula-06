@@ -315,6 +315,10 @@ h2 {
 
 /* ===== RESPONSIVIDADE - TABLETS ===== */
 @media (max-width: 1024px) {
+    h1, h2 {
+        text-align: center; /* centraliza títulos no tablet */
+    }
+    
     main {
         padding: 20px;          /* diminui margem lateral */
     }
@@ -331,6 +335,10 @@ h2 {
 
 /* ===== RESPONSIVIDADE - CELULARES ===== */
 @media (max-width: 600px) {
+    h1, h2 {
+        text-align: center; /* centraliza títulos no celular */
+    }
+
     .topbar-superior {
         flex-direction: column; /* logo em cima, busca embaixo */
         gap: 10px;
