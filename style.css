@@ -112,25 +112,29 @@ transition: 0.3s;
     color:#ff6600;
 }
 
+/* Conteúdo principal da página */
 
 .container-inicio /*Bolo de milho */ {
     display: flex;
     justify-content: center;
 }
 
+/* Imagem do bolo */
 .container-imagem img {
     width: 500px;
     height: auto;
     border-radius: 30px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+/* Informações de duração */
 .container-tempo {
     display: flex;
     gap: 20px;
     justify-content: center;
     list-style: none;
+    margin-bottom: 60px;
 
 }
 
@@ -144,26 +148,52 @@ transition: 0.3s;
 }
 
 .container-tempo img {
-    display: flex;
+display: flex;
 height: auto;
 width: 24px;
 border-radius: 30px;
 padding-right: 5px;
 
 
+
+
+}
+
+/* Todos os H2 da página */
+h2 {
+font-size: 30px;
 }
 
 
+/* Descrição */
 
-.container-imagem {
-    display: flex;
-    justify-content: center;
+.card {
+width: 100%;
+border: 1px solid #e65c00;
+font-size: 20px;
+border-radius: 12px;
+padding: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3) ;
+}
+
+.card h2 {
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+font-size: 30px;
+font-weight: bold;
 
 }
 
 .container-texto {
     text-align: justify;
-    margin-bottom: 40px;
+    line-height: 1.5;
+
+}
+
+.container-imagem {
+    display: flex;
+    justify-content: center;
 
 }
 
