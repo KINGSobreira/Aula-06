@@ -85,9 +85,7 @@ nav {
     justify-content: center;
     padding-top: 10px;
     background: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    /* sombra embaixo da barra */
-    ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* sombra embaixo da barra */
     width: 100%;
 
 }
@@ -119,17 +117,14 @@ nav {
     color: #ff6600;
 }
 
-/* Conteúdo principal da página */
-
-.container-inicio
-
-/*Bolo de milho */
-    {
+/*Bolo de milho cremoso TEXTO */
+.container-inicio h1 {
     display: flex;
     justify-content: center;
 }
 
-/* Imagem do bolo */
+
+/*Bolo de milho */
 .container-imagem img {
     width: 500px;
     height: auto;
@@ -189,7 +184,6 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 3px;
-    font-size: 30px;
     font-weight: bold;
 
 }
@@ -220,7 +214,6 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 3px;
-    font-size: 30px;
     font-weight: bold;
 }
 
@@ -253,16 +246,113 @@ h2 {
 }
 
 
+/* Utensilios */
+.container-utensilios {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    
+}
+
+.container-utensilios h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.container-utensilios ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 16px;
+}
+
+
+/* Modo de preparo */
+
+.card4 {
+    width: 100%;
+    border: 1px solid #e65c00;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom 
+}
+
+.card4 h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card4 ol {
+margin-left: 15px;
+
+}
+
+/* Informações Adicionais */
+.card5 {
+    margin-top: 30px;
+    width: 100%;
+    border: 1px solid #e65c00;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card5 h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.container-dica {
+display: flex;
+justify-content: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-weight: bold;
+
+}
+
+
+.container-texto {
+    text-align: justify;
+    line-height: 1.5;
+
+
+
 /* Footer */
-.container-link {
+
+.receita-original {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.container-link div a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 42em;
     text-decoration: none;
     color: white;
     width: fit-content;
-    background-color: rgb(47, 126, 119);
-    padding: 20px 50px;
+    background-color: #fbb03b;
+    padding: 20px;
     border-radius: 10px;
     font-weight: bold;
-    margin-top: 50px;
     box-shadow: 5px 5px 15px black;
 
 }
@@ -270,48 +360,6 @@ h2 {
 
 
 
-
-/* Responsividade para tablets */
-@media (max-width: 1024px) {
-    main {
-        padding: 40px 20px;
-        /* diminui margem lateral */
-    }
-
-    .logo {
-        width: 250px;
-        /* logo menor */
-    }
-
-    #busca {
-        width: 100%;
-        /* ocupa largura da tela */
-    }
-
-    .container-imagem img {
-        width: 100%;
-        /* imagem nunca ultrapassa tela */
-        max-width: 500px;
-        /* mas não cresce demais */
-    }
-
-    .container-tempo {
-        flex-direction: column;
-        /* empilha em vez de lado a lado */
-        align-items: center;
-    }
-
-    .container-tempo li {
-        width: 90%;
-        /* ocupa quase toda largura */
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        /* menu quebra em mais linhas se precisar */
-        gap: 16px;
-    }
-}
 
 /* ===== RESPONSIVIDADE - TABLETS ===== */
 @media (max-width: 1024px) {
