@@ -43,7 +43,7 @@ main {
 
 #busca {
     display: flex;
-    align-itens: center;
+    align-items: center;
     width: 100%;
     /* ocupa toda a largura disponível */
     max-width: 400px;
