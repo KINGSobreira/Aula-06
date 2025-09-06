@@ -249,6 +249,7 @@ h2 {
 
 /* Utensilios */
 .container-utensilios {
+    margin-bottom: 30px;
     width: 100%;
     font-size: 20px;
     border-radius: 12px;
@@ -294,7 +295,9 @@ h2 {
 
 .card4 ol {
 margin-left: 15px;
+margin-bottom: 5px;
 }
+
 
 /* Informações Adicionais */
 .card5 {
@@ -331,7 +334,20 @@ font-weight: bold;
 
 
 /* Footer */
-.container-link {
+.container-link a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-left: 50em;
+    color: white;
+    width: fit-content;
+    background-color: #fbb03b;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px black;
+
 
 }
 
