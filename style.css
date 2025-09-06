@@ -351,7 +351,129 @@ font-weight: bold;
 
 }
 
+/* ===== RESPONSIVIDADE - TABLETS ===== */
+@media (max-width: 1024px) {
+    main {
+        padding: 40px; /* diminui a margem lateral */
+    }
 
+    .logo {
+        width: 200px; /* logo menor */
+    }
+
+    #busca {
+        max-width: 300px;
+    }
+
+    .container-lista {
+        gap: 12px; /* espaçamento menor no menu */
+        font-size: 14px;
+    }
+
+    .container-imagem img {
+        width: 350px; /* imagem menor */
+    }
+
+    .container-tempo li {
+        width: auto; /* deixa os quadrados mais flexíveis */
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* ===== RESPONSIVIDADE - CELULARES ===== */
+@media (max-width: 768px) {
+    main {
+        padding: 20px; /* menos margem lateral */
+    }
+
+    .topbar-superior {
+        flex-direction: column; /* logo e busca ficam empilhados */
+        gap: 10px;
+    }
+
+    .logo {
+        width: 150px; /* logo bem menor */
+    }
+
+    #busca {
+        max-width: 100%; /* ocupa a largura total */
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    .container-lista {
+        flex-direction: column; /* menu em lista vertical */
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .container-imagem img {
+        width: 100%; /* imagem ocupa a largura da tela */
+        max-width: 300px;
+    }
+
+    .container-tempo {
+        flex-direction: column; /* tempo, dificuldade, custo em colunas */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container-tempo li {
+        width: 80%; /* ocupa mais da tela */
+    }
+
+    .container-grupo {
+        flex-direction: column; /* ingredientes em uma coluna */
+        align-items: center;
+    }
+
+    .container-listaing li, 
+    .container-listaing1 li {
+        width: 90%; /* ocupa quase toda a tela */
+    }
+
+    .container-utensilios ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    h1, h2 {
+        text-align: center; /* centraliza títulos */
+        font-size: 22px;
+    }
+
+    .container-link a {
+        margin: 20px auto; /* centraliza botão no rodapé */
+    }
+}
+
+/* ===== RESPONSIVIDADE - CELULARES PEQUENOS ===== */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* fonte menor */
+    }
+
+    #texto-busca {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #botao-buscar {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .container-lista {
+        font-size: 12px;
+    }
+
+    .container-imagem img {
+        max-width: 250px;
+    }
+}
 
 
 
