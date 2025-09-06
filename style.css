@@ -207,6 +207,7 @@ h2 {
 .card2 {
     margin-top: 30px;
     width: 100%;
+    margin-bottom: 30px;
 
 }
 
@@ -252,6 +253,8 @@ h2 {
     font-size: 20px;
     border-radius: 12px;
     padding: 25px;
+    border: 1px solid #e65c00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -279,7 +282,6 @@ h2 {
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom 
 }
 
 .card4 h2 {
@@ -292,7 +294,6 @@ h2 {
 
 .card4 ol {
 margin-left: 15px;
-
 }
 
 /* Informações Adicionais */
@@ -326,34 +327,11 @@ font-weight: bold;
 .container-texto {
     text-align: justify;
     line-height: 1.5;
-
+}
 
 
 /* Footer */
-
-.receita-original {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-
-
-}
-
-
-
-.container-link div a {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    margin-left: 42em;
-    text-decoration: none;
-    color: white;
-    width: fit-content;
-    background-color: #fbb03b;
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 5px 5px 15px black;
+.container-link {
 
 }
 
@@ -361,57 +339,4 @@ font-weight: bold;
 
 
 
-/* ===== RESPONSIVIDADE - TABLETS ===== */
-@media (max-width: 1024px) {
-    h1, h2 {
-        text-align: center; /* centraliza títulos no tablet */
-    }
-    
-    main {
-        padding: 20px;          /* diminui margem lateral */
-    }
-    .logo {
-        width: 200px;           /* logo menor */
-    }
-    .container-tempo {
-        flex-wrap: wrap;        /* itens quebram linha se necessário */
-    }
-    .container-tempo li {
-        flex: 1 1 45%;          /* cada item ocupa ~metade da linha */
-    }
-}
 
-/* ===== RESPONSIVIDADE - CELULARES ===== */
-@media (max-width: 600px) {
-    h1, h2 {
-        text-align: center; /* centraliza títulos no celular */
-    }
-
-    .topbar-superior {
-        flex-direction: column; /* logo em cima, busca embaixo */
-        gap: 10px;
-    }
-    .logo {
-        width: 180px; /* logo menor ainda */
-    }
-    #texto-busca {
-        font-size: 16px; /* texto da busca menor */
-    }
-    .container-tempo {
-        flex-direction: column; /* empilha itens */
-    }
-    .container-tempo li {
-        width: 100%; /* ocupa toda largura */
-    }
-    nav ul {
-        flex-direction: column; /* menu em coluna */
-        gap: 10px;
-    }
-    h2 {
-        font-size: 22px; /* títulos menores */
-    }
-    .card {
-        font-size: 16px; /* texto menor */
-        padding: 12px;   /* menos espaço interno */
-    }
-}
